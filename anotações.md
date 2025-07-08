@@ -7,6 +7,7 @@
 - shebang
 - Args & Kwargs
 - Pacotes
+- Padrão de projetos (FAÇADE)
 
 ##  Estudar mais afundo :
   [x]Recursividade
@@ -16,6 +17,8 @@
   []atributos mutaveis
   []Decorator
   []Innerfunction
+  []FAÇADE
+  
 # Anotações :
 
 ! CSV - COMMAND SEPARTE VALUES
