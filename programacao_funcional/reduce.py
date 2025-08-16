@@ -1,4 +1,5 @@
 #!/usr/local/bin/python3
+from functools import reduce
 
 people = [
     {'name': 'Pedro', 'age': 20},
@@ -9,9 +10,8 @@ people = [
     {'name': 'Aline', 'age': 17},
 ]
 
-youghers = filter(lambda p: p['age'] < 18, people)
-print(list(youghers))
+ages = map(lambda p: p['age'], people)
+youghers = filter(lambda i: i < 18, ages)
+sum_ages = reduce(lambda age, i: age + i, youghers, 0)
 
-
-name_big = filter(lambda p: len(p['name']) >= 7, people)
-print(list(name_big))
+print(sum_ages)
