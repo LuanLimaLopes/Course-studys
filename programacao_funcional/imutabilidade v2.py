@@ -1,3 +1,4 @@
+#!/usr/local/bin/python3
 from locale import setlocale, LC_ALL
 from calendar import mdays, month_name
 from functools import reduce
