@@ -1,7 +1,7 @@
 from db import nova_conexao
-from pymysql.err import ProgrammingError
+from pymysql import ProgrammingError
 
-sql = 'Select * from contatos'
+sql = "SELECT * FROM contatos LIMIT 6"
 
 with nova_conexao() as conexao:
     try:
@@ -12,4 +12,4 @@ with nova_conexao() as conexao:
         print(f'Erro: {e}')
     else:
         for contato in contatos:
-            print(f'{contato[2]:2d} - {contato[0]:20s} Telefone: {contato[1]} - Grupo {contato[3]}')
+            print(f'{contato[2]:2d} - {contato[0]:10s} Telefone {contato[1]}')
